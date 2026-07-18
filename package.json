@@ -1,0 +1,26 @@
+{
+  "name": "discord-softban-trap-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Discord moderation bot with a public softban trap channel and audit logging.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "register": "node scripts/register-commands.js",
+    "test": "node --test",
+    "lint": "eslint .",
+    "check": "npm run lint && npm test"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "12.11.1",
+    "discord.js": "14.27.0",
+    "dotenv": "17.4.2"
+  },
+  "devDependencies": {
+    "eslint": "10.7.0"
+  }
+}
